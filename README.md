@@ -6,7 +6,7 @@ A content focused responsive theme for [Ghost](https://github.com/tryghost/ghost
 
 Maintaining this project takes a lot of time. You can [buy me a drink](https://paypal.me/zutrinken) if you enjoy using Attila. Cheers 🍻
 
-## 📷 Screenshots
+## 📷 Screenshot
 
 <img src="https://raw.githubusercontent.com/zutrinken/attila/master/src/screenshot.png" />
 
@@ -32,7 +32,7 @@ Maintaining this project takes a lot of time. You can [buy me a drink](https://p
 | `es` | 🇪🇸 | Spanish | 🟩 | [r1p](https://github.com/r1p) |
 | `fr` | 🇫🇷 | French | 🟧 | [robink](https://github.com/robink) |
 | `it` | 🇮🇹 | Italian | 🟧 | [fmaida](https://github.com/fmaida) |
-| `no` | 🇳🇴 | Norwegian | 🟧 | [arthurnoerve](https://github.com/arthurnoerve), [oisann](https://github.com/oisann) |
+| `no` | 🇳🇴 | Norwegian | 🟧 | [arthurnoerve](https://github.com/arthurnoerve), [oisann](https://github.com/oisann), [Givemeurcookies](https://github.com/givemeurcookies) |
 | `zh` | 🇨🇳 | Chinese | 🟩 | [hao-lee](https://github.com/hao-lee), [izumiko](https://github.com/izumiko) |
 | `id` | 🇮🇩 | Indonesian | 🟧 | [simplyeazy](https://github.com/simplyeazy) |
 | `ro` | 🇷🇴 | Romanian | 🟧 | [cdorin93](https://github.com/cdorin93) |
@@ -51,6 +51,7 @@ Maintaining this project takes a lot of time. You can [buy me a drink](https://p
 | `pl` | 🇵🇱 | Polish | 🟩 | [filipolszewski](https://github.com/filipolszewski), [MrBoombastic](https://github.com/mrboombastic) |
 | `eo` | | Esperanto | 🟧 | [ebanDev](https://github.com/ebanDev) |
 | `ga` | | Galego | 🟩 | [r1p](https://github.com/r1p) |
+| `uk` | 🇺🇦 | Ukrainian | 🟩 | [Rakanskiy](https://github.com/rakanskiy) |
 
 ## Show subscribe / account button in navigation
 
@@ -72,6 +73,16 @@ Maintaining this project takes a lot of time. You can [buy me a drink](https://p
     --font-secondary: 'Crimson Text', serif;
   }
 </style>
+````
+## 🌓 Force Light/Dark Mode
+
+1. Go to __Code injection__.  
+2. Decide for `light` or `dark`.
+3. Add this to __Blog Header__:
+
+````html
+<script>localStorage.setItem('attila_theme', 'dark');</script>
+<style>.js-theme {display:none!important;}</style>
 ````
 
 ## 💬 Setup [Disqus](https://disqus.com/)
