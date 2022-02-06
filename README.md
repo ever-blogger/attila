@@ -12,8 +12,9 @@ Maintaining this project takes a lot of time. You can [buy me a drink](https://p
 
 ## ⭐️ Features
 
+* Theme options
 * Responsive layout
-* Dark Mode & Theme Switch
+* Light and Dark Mode
 * Search & Popular Tags
 * Post reading progress
 * Code highlight including line numbers
@@ -30,8 +31,8 @@ Maintaining this project takes a lot of time. You can [buy me a drink](https://p
 | `en` | 🇬🇧 | English | 🟩 | |
 | `de` | 🇩🇪 | German | 🟩 | |
 | `es` | 🇪🇸 | Spanish | 🟩 | [r1p](https://github.com/r1p) |
-| `fr` | 🇫🇷 | French | 🟧 | [robink](https://github.com/robink) |
-| `it` | 🇮🇹 | Italian | 🟧 | [fmaida](https://github.com/fmaida) |
+| `fr` | 🇫🇷 | French | 🟩 | [robink](https://github.com/robink), [alsyia](https://github.com/alsyia) |
+| `it` | 🇮🇹 | Italian | 🟩 | [fmaida](https://github.com/fmaida), [undrivendev](https://github.com/undrivendev) |
 | `no` | 🇳🇴 | Norwegian | 🟧 | [arthurnoerve](https://github.com/arthurnoerve), [oisann](https://github.com/oisann), [Givemeurcookies](https://github.com/givemeurcookies) |
 | `zh` | 🇨🇳 | Chinese | 🟩 | [hao-lee](https://github.com/hao-lee), [izumiko](https://github.com/izumiko), [emperorjoker](https://github.com/emperorjoker) |
 | `id` | 🇮🇩 | Indonesian | 🟧 | [simplyeazy](https://github.com/simplyeazy) |
@@ -51,7 +52,7 @@ Maintaining this project takes a lot of time. You can [buy me a drink](https://p
 | `pl` | 🇵🇱 | Polish | 🟩 | [filipolszewski](https://github.com/filipolszewski), [MrBoombastic](https://github.com/mrboombastic) |
 | `eo` | | Esperanto | 🟧 | [ebanDev](https://github.com/ebanDev) |
 | `ga` | | Galego | 🟩 | [r1p](https://github.com/r1p) |
-| `uk` | 🇺🇦 | Ukrainian | 🟩 | [Rakanskiy](https://github.com/rakanskiy), [krupenik](https://github.com/krupenik) |
+| `uk` | 🇺🇦 | Ukrainian | 🟩 | [Rakanskiy](https://github.com/rakanskiy), [krupenik](https://github.com/krupenik), [vadimkin](https://github.com/vadimkin) |
 | `ja` | 🇯🇵 | Japanese | 🟩 | [emperorjoker](https://github.com/emperorjoker) |
 | `fa` | | Farsi | 🟩 | [ItsAminZamani](https://github.com/ItsAminZamani) |
 
@@ -75,24 +76,6 @@ Maintaining this project takes a lot of time. You can [buy me a drink](https://p
     --font-secondary: 'Crimson Text', serif;
   }
 </style>
-````
-## 🌓 Force Light/Dark Mode
-
-1. Go to __Code injection__.  
-2. Decide for `light` or `dark`.
-3. Add this to __Blog Header__:
-
-````html
-<script>localStorage.setItem('attila_theme', 'dark');</script>
-<style>.js-theme {display:none!important;}</style>
-````
-
-## 💬 Setup [Disqus](https://disqus.com/)
-
-1. Go to __Code injection__.  
-2. Add this to __Blog Header__:  
-````html
-<script>var disqus = 'YOUR_DISQUS_SHORTNAME';</script>
 ````
 
 ## 🔍 Setup search
@@ -127,4 +110,4 @@ grunt compress
 ````
 ## ⚖️ Copyright & License
 
-Copyright (C) 2015-2021 Peter Amende - Released under the [MIT License](https://github.com/zutrinken/attila/blob/master/LICENSE).
+Copyright (C) 2015-2022 Peter Amende - Released under the [MIT License](https://github.com/zutrinken/attila/blob/master/LICENSE).

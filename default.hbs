@@ -32,6 +32,31 @@
 			}
 	</script>
 
+	{{#match @custom.color_scheme "Dark"}}
+		<script>localStorage.setItem('attila_theme', 'dark');</script>
+		<style>.js-theme {display:none!important;}</style>
+	{{/match}}
+
+	{{#match @custom.color_scheme "Light"}}
+		<script>localStorage.setItem('attila_theme', 'light');</script>
+		<style>.js-theme {display:none!important;}</style>
+	{{/match}}
+
+	{{#match @custom.color_scheme "!=" "Light"}}
+		{{#if @custom.darkmode_accent_color}}
+			<style>
+				.theme-dark:root {
+				  --ghost-accent-color: {{@custom.darkmode_accent_color}};
+				}
+				@media (prefers-color-scheme: dark) {
+				  html:not(.theme-light):root {
+				    --ghost-accent-color: {{@custom.darkmode_accent_color}};
+				  }
+				}
+			</style>
+		{{/if}}
+	{{/match}}
+
 	{{ghost_head}}
 </head>
 
